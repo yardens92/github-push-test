@@ -16,8 +16,8 @@ import com.cloudframe.app.retcode2.dto.Work;
 public class Retcode2Ctx implements ProgramContext, Cloneable {
     GlobalExecutorCtx globalCtx;
 
-    Work work;
     Parm parm;
+    Work work;
 
 
     private int rc;
@@ -51,17 +51,6 @@ public class Retcode2Ctx implements ProgramContext, Cloneable {
     }
 
 
-    public Work getWork() {
-        if (work == null) {
-            work = new Work();
-        }
-
-        return work;
-    }
-
-    public void setWork(Work work) {
-        this.work = work;
-    }
     public Parm getParm() {
         if (parm == null) {
             parm = new Parm();
@@ -72,6 +61,17 @@ public class Retcode2Ctx implements ProgramContext, Cloneable {
 
     public void setParm(Parm parm) {
         this.parm = parm;
+    }
+    public Work getWork() {
+        if (work == null) {
+            work = new Work();
+        }
+
+        return work;
+    }
+
+    public void setWork(Work work) {
+        this.work = work;
     }
 
 
@@ -84,17 +84,17 @@ public class Retcode2Ctx implements ProgramContext, Cloneable {
     @Override
     public int hashCode() {
         String str = "";
-        str += work.hashCode();
         str += parm.hashCode();
+        str += work.hashCode();
        return str.hashCode();
     }
 
     public Retcode2Ctx clone() {
         Retcode2Ctx cloneObj = new Retcode2Ctx();
-        cloneObj.work = new Work();
-        cloneObj.work.set(work.getClonedField());
         cloneObj.parm = new Parm();
         cloneObj.parm.set(parm.getClonedField());
+        cloneObj.work = new Work();
+        cloneObj.work.set(work.getClonedField());
         return cloneObj;
     }
 
@@ -103,8 +103,8 @@ public class Retcode2Ctx implements ProgramContext, Cloneable {
  *
  */
      public class ProcessInCtx implements Cloneable {
-     Work work = Retcode2Ctx.this.getWork();
      Parm parm = Retcode2Ctx.this.getParm();
+     Work work = Retcode2Ctx.this.getWork();
 
 	/**
 	 *	Returns the value of retcode
@@ -150,17 +150,17 @@ public class Retcode2Ctx implements ProgramContext, Cloneable {
     @Override
     public int hashCode() {
         String str = "";
-        str += work.hashCode();
         str += parm.hashCode();
+        str += work.hashCode();
        return str.hashCode();
     }
 
     public ProcessInCtx clone() {
         ProcessInCtx cloneObj = new ProcessInCtx();
-        cloneObj.work = new Work();
-        cloneObj.work.set(work.getClonedField());
         cloneObj.parm = new Parm();
         cloneObj.parm.set(parm.getClonedField());
+        cloneObj.work = new Work();
+        cloneObj.work.set(work.getClonedField());
         return cloneObj;
     }
 
@@ -170,8 +170,8 @@ public class Retcode2Ctx implements ProgramContext, Cloneable {
             return new ProcessInCtx();
     }
      public class ProcessOutCtx implements Cloneable {
-     Work work = Retcode2Ctx.this.getWork();
      Parm parm = Retcode2Ctx.this.getParm();
+     Work work = Retcode2Ctx.this.getWork();
 
 	/**
 	 *	Returns the value of parm
@@ -197,17 +197,17 @@ public class Retcode2Ctx implements ProgramContext, Cloneable {
     @Override
     public int hashCode() {
         String str = "";
-        str += work.hashCode();
         str += parm.hashCode();
+        str += work.hashCode();
        return str.hashCode();
     }
 
     public ProcessOutCtx clone() {
         ProcessOutCtx cloneObj = new ProcessOutCtx();
-        cloneObj.work = new Work();
-        cloneObj.work.set(work.getClonedField());
         cloneObj.parm = new Parm();
         cloneObj.parm.set(parm.getClonedField());
+        cloneObj.work = new Work();
+        cloneObj.work.set(work.getClonedField());
         return cloneObj;
     }
 

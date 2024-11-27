@@ -25,9 +25,7 @@
         <dependency>
             <groupId>com.cloudframe</groupId>
             <artifactId>dcio</artifactId>
-            <version>5.0.0.13</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/cf-lib/CFDataConnectIO.jar</systemPath>
+            <version>4.0.0.158</version>
         </dependency>
 		<dependency>
             <groupId>org.springframework.boot</groupId>
@@ -40,9 +38,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<includeSystemScope>true</includeSystemScope>
-				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
