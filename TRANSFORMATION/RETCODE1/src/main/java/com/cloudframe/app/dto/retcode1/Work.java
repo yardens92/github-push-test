@@ -1,13 +1,13 @@
-package com.cloudframe.app.retcode1.dto;
+package com.cloudframe.app.dto.retcode1;
 
 /**
 *  The class Work is used to handle fields declared in it
 *  @author CloudFrame Inc.
-*  created on 2024-11-28 at 20:35. using version 5.0.0.160
+*  created on 2024-11-28 at 20:37. using version 5.0.0.160
 **/
 
 
-import com.cloudframe.app.retcode1.dto.serialize.*;
+import com.cloudframe.app.dto.serialize.retcode1.*;
 import com.cloudframe.app.exception.CFException;
 
 

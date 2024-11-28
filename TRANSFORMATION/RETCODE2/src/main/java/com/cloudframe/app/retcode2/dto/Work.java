@@ -3,7 +3,7 @@ package com.cloudframe.app.retcode2.dto;
 /**
 *  The class Work is used to handle fields declared in it
 *  @author CloudFrame Inc.
-*  created on 2024-11-23 at 12:29. using version 5.0.0.158
+*  created on 2024-11-28 at 20:35. using version 5.0.0.160
 **/
 
 

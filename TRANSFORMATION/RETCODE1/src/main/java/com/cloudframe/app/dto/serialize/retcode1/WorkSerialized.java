@@ -1,10 +1,10 @@
-package com.cloudframe.app.retcode2.dto.serialize;
+package com.cloudframe.app.dto.serialize.retcode1;
 
 /**
 *  The class WorkSerialized is used to define offsets in order to serialize
 *  in a fixed String
 *  @author CloudFrame Inc.
-*  created on 2024-11-28 at 20:35. using version 5.0.0.160
+*  created on 2024-11-28 at 20:37. using version 5.0.0.160
 **/
 
 import org.slf4j.Logger;
@@ -17,7 +17,6 @@ public class WorkSerialized  extends Field {
     protected Logger logger = LoggerFactory.getLogger(WorkSerialized.class);
 	/*  Length of the field, if serialized as a String */
 	protected static final int WORK_LENGTH = 0;
-   /*  offset of each of Child Fields when serialized as a String */
 	
 	/**
 	* Constructor for WorkSerialized
@@ -34,19 +33,8 @@ public class WorkSerialized  extends Field {
 	   setStartOffset(begin);
 	   setLength(WORK_LENGTH);
 	   /*  set the offset/position of each field when this object is serialized as String */
-  
 	   /*  end of offset */
 	}
-     int localRetcodeCounter = -1;
-     public boolean isRetcodeModified() {
-         int sharedCounter = shareString.getSerializedField().getModifiedCounter(); 
-         boolean hasModified = localRetcodeCounter != sharedCounter;
-         localRetcodeCounter = sharedCounter; return hasModified;
-     }
-
-   protected char[] checkRetcodeConstraints(char[] value) {
-   			return super.checkConstraints(value , 8 ,false, false);
-   }
 
 
 

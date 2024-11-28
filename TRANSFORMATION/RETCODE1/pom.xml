@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.cloudframe</groupId>
-	<artifactId>RETCODE2</artifactId>
+	<artifactId>RETCODE1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>RETCODE2</name>
+	<name>RETCODE1</name>
 	<description>CloudFrame Spring Boot generated Code</description>
 
 	<properties>
